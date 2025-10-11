@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech Start-up - Зворотній зв’язок</title>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Tech Start-up Логотип" width="150" height="150" />
+    <h1>Зворотній зв’язок</h1>
+</header>
+
+<main>
+    <form action="submit_feedback.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Персональна інформація</legend>
+            <p>
+                <label for="fullname">Прізвище та ім’я:</label>
+                <input type="text" id="fullname" name="fullname" required maxlength="50" />
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+                <label for="age">Вік:</label>
+                <input type="number" id="age" name="age" min="16" max="100" required />
+            </p>
+            <p>
+                <label for="education">Освіта:</label>
+                <select id="education" name="education" required>
+                    <option value="">Оберіть</option>
+                    <option value="incomplete">Неповна</option>
+                    <option value="complete">Повна</option>
+                    <option value="professional">Професійна</option>
+                    <option value="higher">Вища</option>
+                </select>
+            </p>
+            <p>Інтереси:</p>
+            <p>
+                <input type="checkbox" id="scientist" name="interests[]" value="scientist" />
+                <label for="scientist">Науковець</label><br />
+                <input type="checkbox" id="investor" name="interests[]" value="investor" />
+                <label for="investor">Інвестор</label><br />
+                <input type="checkbox" id="promoter" name="interests[]" value="promoter" />
+                <label for="promoter">Промоутер</label><br />
+                <input type="checkbox" id="government" name="interests[]" value="government" />
+                <label for="government">Держслужбовець</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="purpose">Мета зворотнього зв’язку:</label>
+            <select id="purpose" name="purpose" required>
+                <option value="">Оберіть</option>
+                <option value="cooperation">Співпраця</option>
+                <option value="complaint">Скарга на порушення права власності</option>
+                <option value="suggestion">Пропозиція</option>
+                <option value="error">Наявність помилки</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="details">Детально:</label><br />
+            <textarea id="details" name="details" rows="5" cols="50" maxlength="1000" required placeholder="Опишіть деталі..."></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">Я згоден на обробку моїх персональних даних</label>
+        </p>
+
+        <p>
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </p>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Tech Start-up. Всі права захищені.</p>
+</footer>
+</body>
+</html>
