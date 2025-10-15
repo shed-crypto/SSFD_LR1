@@ -2,14 +2,15 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TechNova - Головна</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="index">
 <header>
-    <div>
-        <h1>TechNova</h1>
-        <img src="logo.png" alt="TechNova Logo" width="150" height="150" />
-    </div>
+    <img src="logo.png" alt="TechNova Logo" width="150" height="150" class="logo-image" />
+    <div class="header-content">
+    <h1>TechNova</h1>
     <nav>
         <ul>
             <li><a href="projects.html">Проєкти</a></li>
@@ -17,6 +18,7 @@
             <li><a href="feedback.html">Зворотній зв’язок</a></li>
         </ul>
     </nav>
+    </div>
 </header>
 
 <main>
@@ -28,11 +30,13 @@
             <li>Впровадження інновацій у бізнес-процеси</li>
             <li>Забезпечення якості та доступності продуктів</li>
         </ul>
+        <p style="font-size:50px">&#128187;&#128640;</p>
+        
     </article>
 
     <aside>
         <h3>Інформація про засновників</h3>
-        <table border="1" cellpadding="5" cellspacing="0">
+        <table id="founders-table" border="1" cellpadding="5" cellspacing="0" tabindex="0">
             <caption><h3>Команда засновників</h3></caption>
             <thead>
                 <tr>
@@ -105,17 +109,18 @@
             <a href="https://github.com/orgs/ShevDevOps" target="_blank">GitHub</a>
         </p>
         <p>
-            <button type="button" onclick="location.href='login.html'">Перейти у власний кабінет</button>
-            <button type="button" onclick="location.href='register.html'">Зареєструватись</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='login.html'">Перейти у власний кабінет</button>
+            <button type="button" class="btn btn-primary" onclick="location.href='register.html'">Зареєструватись</button>
         </p>
-        <p>
+        <p class="info-block">
             Наш <span style="color:green;"><b><em><i><u>TechNova</u></i></em></b></span> — це команда професіоналів, <span>які прагнуть створити <em>краще майбутнє</em></span>.
+            <span>TechNova прагне впроваджувати інновації для покращення життя користувачів.</span>
+            <i>Основою нашого успіху є використання сучасних технологій.</i>
+            <b>Ми створюємо продукти, які вирішують реальні проблеми.</b>
+            <em>Наш стартап підтримує розвиток екологічно чистих технологій.</em>
+            <u>Залучення користувачів і партнерів є нашим пріоритетом.</u>
         </p>
-        <span>TechNova прагне впроваджувати інновації для покращення життя користувачів.</span>
-        <p><i>Основою нашого успіху є використання сучасних технологій.</i></p>
-        <p><b>Ми створюємо продукти, які вирішують реальні проблеми.</b></p>
-        <p><em>Наш стартап підтримує розвиток екологічно чистих технологій.</em></p>
-        <p><u>Залучення користувачів і партнерів є нашим пріоритетом.</u></p>
+
 
     </section>
 
